@@ -21,16 +21,6 @@ let userSchema = new mongoose.Schema({
 });
 let User = mongoose.model("User", userSchema); 
 
-// User.create({
-//     email:"olalekan@gmail.com"
-// }, (err, user) =>{
-//     if(err){
-//         console.log(err)
-//     } else(
-//         console.log(user)
-//     )
-// }); 
-
 app.get('/', (req, res) =>{
     res.redirect("/users"); 
 })
