@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+    <link rel="stylesheet" href="/styles/app.css">
+
+    <title>Email Capture</title>
+</head>
+<body>
+    <div class="py-4 container text-center">
+        <h1 class="text-success">Please enter your Email</h1>
+        <div class="py-4">
+            <form action="/users" method="POST">
+                <input type="email" name=email>
+                <input type="Submit" value="Be part of the innovation">
+            </form>
+        </div>
+
+    </div>
+    
+    
+<div class=" py-5 contaner">
+    <div class="row justify-content-center">
+        <div class="col-8 justify-content-center">
+            <ol>
+                <% users.forEach(function(user) { %>
+                    <li><%= user.email %> </li>
+            <% }) %>
+        </div>
+    </div>
+   
+    </ol>
+</div>
+   
+</body>
+</html>
