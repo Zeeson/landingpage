@@ -5,34 +5,332 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/bootstrap.css">
     <link rel="stylesheet" href="/styles/app.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <title>Email Capture</title>
+
+    <style>
+        .mackup-row{
+            background-image: url("imgs/ellipse1.png"), url("imgs/ellipse4.png");
+            background-position: left top, right bottom;
+            background-repeat: no-repeat, no-repeat; 
+            width: 400px;
+            height: 850px;
+        }
+        .mackup-row2{
+            background-image: url("imgs/ellipse2.png"), url("imgs/ellipse1.png");
+            background-position: left center, right center;
+            background-repeat: no-repeat, no-repeat; 
+            width: 350px;
+            height: 700px;
+        }
+        .mackup-row3{
+            background-image: url("imgs/ellipse4.png"), url("imgs/ellipse5.png"), url("imgs/ellipse1.png"); 
+            background-position: left top, right center, left bottom; 
+            background-repeat: no-repeat, no-repeat, no-repeat; 
+            width: 350px;
+            height: 700px;
+        }
+        .mackup-row4{
+            background-image: url("imgs/ellipse4.png"), url("imgs/ellipse1.png");
+            background-position: left center, right center;
+            background-repeat: no-repeat, no-repeat; 
+            width: 300px;
+            height: 700px;
+        }
+        .mackup-row5{
+            background-image: url("imgs/ellipse2.png"), url("imgs/ellipse5.png"), url("imgs/ellipse1.png"); 
+            background-position: left top, right center, left bottom; 
+            background-repeat: no-repeat, no-repeat, no-repeat; 
+            width: 300px;
+            height: 700px;
+        }
+    </style>
+
 </head>
 <body>
-    <div class="py-4 container text-center">
-        <h1 class="text-success">Please enter your Email</h1>
-        <div class="py-4">
-            <form action="/users" method="POST">
-                <input type="email" name=email>
-                <input type="Submit" value="Be part of the innovation">
+  
+    <div class=" py-4 container">
+        <div class="d-flex justify-content-between">
+            <div>
+                <img class="ml-5" src="imgs/logo.png" alt="" srcset="">
+            </div>
+            <div class="py-2 mr-5">
+                <button class="btn text-white" style="background: #1DD3B0; border-radius: 4px; height: 50px;">REQUEST A FEATURE</button>
+            </div>
+        </div>
+           
+            <div class="mt-1 container border bg " style="background-color: #011013; width: auto; height: 500px;">
+                <div class="row py-5 m-5">
+                    <div class="col-6 text-white" style="margin-top: 60px !important; margin-left: 30px;">
+                        <br/>
+                        <br/>
+                        <h1 class="display-7 sec-color ">FERTILO </h1>
+                        <p class="">The tool that determines the fertility of a farmland and forecasts
+                            the best crop to be grown on it for maximum yield and profit.</p>
+                        <!-- <hr class="my-4"> -->
+                        <p>Register interest below and we’ll let you know when fertilo is baked to crispy perfection.</p>
+                    </div>
+                </div>
+                <div class="row m-5 mb-5">
+                    <div class="col-12" style="margin-top: -50px;  margin-left: 30px;" >
+                        <form action="/users" method="POST" >
+                            <input type="email" value="Email Address" name=email style="width: 350px; height: 52px;">
+                            <input class="sec-background text-white" type="Submit" value="GET EARLY ACCESS" style="font-size: 13px; width: 250px; height: 52px; margin-left: -4px;">
+                        </form>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <img src="imgs/ellipse5.png" alt="" srcset="" >
+                </div> -->
+            </div>
+<br/>
+<br/>
+        
+    <div class="py-5 container">
+        <div class="row">
+            <div class=" col-5 mackup-row">
+                <img class="ml-5 mt-5" src="imgs/screen1.png" alt="" srcset="" style="width: 300px; height: 710px; margin-top: 80px !important; margin-left: 60px !important;">
+            </div>
+            <div class="col-7">
+                <div class="mr-5">
+                    <div style="margin-left: -130px !important; margin-top: -20px;">
+                        <h3 class="pt-1 justify-content h2 start" >What exactly is Fertilo</h3>
+                        <img class="ml-3" src="imgs/line.png" alt="" srcset="">
+                    </div>
+                </div>
+                
+                <p class="mt-3 font-weight-bold">As a young kid growing up I always visit my mom’s hometown atleast once in a year ,and whenever I get home, 
+                    I join my relatives in cultivating the land. <br/> <br/> 
+                    We were always faced with a problem,which is “the inability to determine best crop to be planted on a
+                     particular farmland for maximum yield and profit”.As i grew older i discovered this was a problem faced 
+                     by several other farmers across the globe. <br/><br/>
+                    This propelled me to find out a lasting solution to this problem,which i’m introducing to you today. <br/> <br/>                 
+                    Fertilo is a tool that helps you determine the best crop to plant on a farmland for maximum yield and profit.
+                    </p>
+                    <button class="btn sec-background text-white" style=" margin-top: 10px; width: 150px; height: 42px;">DEMO PAGES</button>
+            </div>
+         </div>
+    </div>
+
+    <div class="text-center" >
+        <h3 class="font-weight-bold" style="margin-top: 0px;">How It Works</h3>
+        <img class="mr-5 mb-5" src="imgs/line.png" alt="" srcset="" style="margin-left: -45px;">
+    </div>
+    
+    <div class=" container" style="background: #EAE7E7; height: 780px;">
+        <div class="row ">
+            <div class="col-6">
+                <div class="row justify-content-center align-items-center m-3">
+                    <div class="col-8" >
+                        <div style="margin-top: 140px;">
+                            <img class="" src="imgs/line.png" alt="" srcset="" >
+                            <span class="font-weight-bold h4">01</span>
+                        </div>
+                        <h6 class="h4 font-weight-bold mt-3">Scan the page</h6>
+                        <p>Open up the app and scan the selected land.
+                            Then wait for 3 minutes for our AI system to 
+                            produce the results. </p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-5 mackup-row2">
+                <img class="ml-5 mt-5" src="imgs/screen1.png" alt="" srcset="" style="width: 300px; height: 650px; margin-left: 60px !important;">
+            </div>
+        </div>
+    </div>
+    
+    <div class=" py-5 container">
+        <div class="row ">
+            <div class=" col-5 mackup-row3 ml-5">
+                <img class="mr-5 mt-5" src="imgs/screen1.png" alt="" srcset="" style="width: 300px; height: 620px; margin-left: 60px !important;">
+            </div>
+            <div class="col-6">
+                <div class="row justify-content-center align-items-center m-3">
+                    <div class="col-8" >
+                        <div style="margin-top: 140px;">
+                            <img class="" src="imgs/line.png" alt="" srcset="" >
+                            <span class="font-weight-bold h4">02</span>
+                        </div>
+                        <h6 class="h4 font-weight-bold mt-3">Get your analysis</h6>
+                        <p>The results of your scan will be displayed and 
+                            detailed analysis of the land will be displayed.
+                            Data such as the type os soil,mineral composition,
+                            water level and composition and so on. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" py-2 container" style="background: #EAE7E7; height: 780px;">
+        <div class="row ">
+            <div class="col-6">
+                <div class="row justify-content-center align-items-center m-5">
+                    <div class="col-12 ml-5" >
+                        <div style="margin-top: 140px;">
+                            <img class="" src="imgs/line.png" alt="" srcset="" >
+                            <span class="font-weight-bold h4">03</span>
+                        </div>
+                        <h6 class="h4 font-weight-bold mt-3">Get Recommendations</h6>
+                        <p>After Analysis of the farmland, our super intelligent AI system will 
+                            recommend best suited crops to be cultivated on that farmland for the 
+                            maximum yield and profits. You will have to choose your desired crop out of the availabel options. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-5 mackup-row4">
+                <img class="ml-5 mt-5" src="imgs/screen1.png" alt="" srcset="" style="width: 300px; height: 650px; margin-left: 60px !important;">
+            </div>
+        </div>
+    </div>
+    
+    <div class=" py-5 container">
+        <div class="row ">
+            <div class=" col-5 ml-5 mackup-row5">
+                <img class="ml-5 mt-5" src="imgs/screen1.png" alt="" srcset="" style="width: 300px; height: 620px; margin-left: 60px !important;">
+            </div>
+            <div class="col-6">
+                <div class="row justify-content-center align-items-center m-5">
+                    <div class="col-12" >
+                        <div style="margin-top: 80px;">
+                            <img class="" src="imgs/line.png" alt="" srcset="" >
+                            <span class="font-weight-bold h4">04</span>
+                        </div>
+                        <h6 class="h4 font-weight-bold mt-3">Get forecast</h6>
+                        <p class="mt-2">Our AI system has been fed with millions of data points that makes it possible
+                            to match corresponding data from hte results of the scan forecasts
+                        of yeild and profit from the selected crop </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<br/>
+
+
+
+    <!-- Countdown Timer -->
+<div class=" counter">
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="months">
+                    <p class="counter-count font-weight-bold num" id="days">00</p>
+                    <p class="months-p text-white text" id="days-text" >Days</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="days">
+                    <p class="counter-count font-weight-bold num" id="hours">00</p>
+                    <p class="days-p text-white text" id="hours-text">Hours</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="hours">
+                    <p class="counter-count font-weight-bold num" id="mins">00</p>
+                    <p class="hours-p text-white text" id="mins-text">Minutes</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="minutes">
+                    <p class="counter-count font-weight-bold num" id="secs">00</p>
+                    <p class="minutes-p text-white text" id="secs-text">Seconds</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class=" m-5 py-5 container">
+    <div>
+        <div class="text-center py-5 text-bolder" >
+            <h3 style="margin-top: -30px;">What people are saying</h3>
+            <img class="mr-5 mb-5" src="imgs/line.png" alt="" srcset="">
+        </div>
+    </div>
+<div class="row justify-content-center">
+    <div class="card-columns" style="width:900px">
+        <div class="card bg-white">
+          <div class="card-body text-center ">
+            <img src="imgs/client1.png" alt="" srcset="">
+            <p class="py-1 card-text"><span class="sec-color">" </span> I can’t wait to get a tool like this.I have always 
+                found it hard to predict the yeild of my crop. <span class="sec-color">" </span></p>
+                <p class="h3">Cindy S</p>
+          </div>
+        </div>
+        <div class="card bg-white">
+          <div class="card-body text-center ">
+            <img src="imgs/client2.png" alt="" srcset="">
+            <p class=" py-1 card-text"> <span class="sec-color">" </span>The fact that i will know the best crop to
+                 plant on my farmland is what i can’t wait to have. <span class="sec-color">" </span></p>
+                 <p class="h3">Mark E</p>
+          </div>
+        </div>
+        <div class="card bg-white">
+          <div class="card-body text-center">
+            <img src="imgs/client3.png" alt="" srcset="">
+            <p class="py-1 card-text"> <span class="sec-color">" </span> With this app i believe i will not waste my time planting crops that
+                 will not yield maximum profits. <span class="sec-color">" </span></p>
+            <p class="h3 card-text">Kachino A</p>
+          </div>
+        </div>
+        </div>
+      </div>
+</div>
+</div>
+</div>
+
+<div class=" pb-5 container text-center">
+    <div class="row ">
+        <div class="col-4 justify-content-center align-items-center">
+            <p class="h2">What do you want from Fertilo ?</p>
+            <p class="font-weight-bold">Take our 4 minutes survey and tell us the features you'd love to and what's important to you </p>
+            <button class="btn text-white sec-background" style="border-radius: 4px; width: 300px; height: 60px; text-transform: capitalize;">REQUEST A FEATURE</button>
+
+        </div>
+        <div class="col-4">
+            
+        </div>
+        <div class="col-4">
+            <p class="font-weight-bold">Register interest and we let you know when Fertilo is baked to crispy perfection</p>
+            <form action="/users" method="POST" >
+                <input type="email" value="Email Address" name=email style="width: 400px; height: 70px; border: 1px solid #1DD3B0;">
+                <div>
+                    <button class=" mt-4 ml-5 sec-background text-white" type="Submit" style=" border-radius: 4px; width: 300px; height: 60px; text-transform: capitalize;"> GET EARLY ACCESS</button>
+                </div>
+              
             </form>
         </div>
-
     </div>
-    
-    
-<div class=" py-5 contaner">
-    <div class="row justify-content-center">
-        <div class="col-8 justify-content-center">
-            <ol>
-                <% users.forEach(function(user) { %>
-                    <li><%= user.email %> </li>
-            <% }) %>
-        </div>
-    </div>
-   
-    </ol>
 </div>
-   
+
+
+<!-- footer -->
+     <div class="py-5 container">
+        <div class="row text-white border border-mobile" style="background: #1F252A; width: 1200px; height: 131px; align-items: center;">
+          <div class="col-4 text-center">
+           <h1 class="footer-logo" style="font-size: 40px; line-height: 53px;">Fertilo</h1> 
+          </div>
+          <div class="col-4 text-center">
+             
+          </div>
+          <div class="col-4 text-center">
+           <p>All rights reserved, 2020</p>
+          </div>
+        </div>
+      </div>
+
+      <br/>
+
+      
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="js/app.js"></script>
 </body>
 </html>

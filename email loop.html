@@ -1,0 +1,12 @@
+<table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <% users.forEach(function(user) { %>
+    <tbody>
+            <td><%= user.email %> </td>
+    <% }) %>
+    </tbody>
+</table>

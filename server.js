@@ -29,6 +29,7 @@ app.get('/', (req, res) =>{
 // Index route
 
 app.get("/users", (req, res) =>{
+  res.render("index")
     User.find()
     .then( function(users) {
         res.render("index", {users: users})
@@ -38,17 +39,6 @@ app.get("/users", (req, res) =>{
         console.log(err)
     })
   });
-
-
-//   app.get("/users", (req, res) =>{
-//     User.find({}, (err, users) =>{
-//         if(err){
-//             console.log("big fuck up")
-//         } else{
-//             res.render("index", {users: users})
-//         }
-//     }); 
-// });
 
 
   app.post("/users", (req, res) => {
@@ -68,17 +58,6 @@ app.get("/users", (req, res) =>{
     }) 
   })
 
-  
-//   app.post("/users", (req, res) =>{
-//     User.create(req.body.user, (err, newUser) =>{
-//         if(err){
-//             res.send(err)
-//         } else{
-//             res.redirect("/users")
-//             console.log(newUser) 
-//         }
-//     }); 
-// });
 
 
 app.listen(PORT, () => {
