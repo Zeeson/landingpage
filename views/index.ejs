@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Email Capture</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/bootstrap.css">
     <link rel="stylesheet" href="/styles/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <title>Email Capture</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />  <!-- w3c recomends this meta tag  -->
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />  <!-- w3c recomends this meta tag  -->
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="copyright" content="" />
+	<meta name="author" content="" />
+	<meta name="rating" content="general" />
+	<meta name="robots" content="all" />
+        <!-- Stylesheets -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+	   
+    
     <style>
+        body{
+             background: #E5E5E5;
+          }
+          .top-side-image{
+              background-image: url("imgs/ellipseex.png");
+              background-position: right top;
+              background-repeat: no-repeat;
+              width: 140px;
+              height: 100px;
+              float: right;
+              rotate: right;
+          }
         .mackup-row{
             background-image: url("imgs/ellipse1.png"), url("imgs/ellipse4.png");
             background-position: left top, right bottom;
@@ -45,6 +74,8 @@
             width: 300px;
             height: 700px;
         }
+
+
     </style>
 
 </head>
@@ -60,7 +91,7 @@
             </div>
         </div>
            
-            <div class="mt-1 container border bg " style="background-color: #011013; width: auto; height: 500px;">
+            <div class="mt-1 container border bg " style="background-color: #011013; width: auto; height: 550px;">
                 <div class="row py-5 m-5">
                     <div class="col-6 text-white" style="margin-top: 60px !important; margin-left: 30px;">
                         <br/>
@@ -73,10 +104,10 @@
                     </div>
                 </div>
                 <div class="row m-5 mb-5">
-                    <div class="col-12" style="margin-top: -50px;  margin-left: 30px;" >
+                    <div class="col-12" style="margin-top: -95px;  margin-left: 30px;" >
                         <form action="/users" method="POST" >
-                            <input type="email" value="Email Address" name=email style="width: 350px; height: 52px;">
-                            <input class="sec-background text-white" type="Submit" value="GET EARLY ACCESS" style="font-size: 13px; width: 250px; height: 52px; margin-left: -4px;">
+                            <input type="email" value="Email Address" name=email style="width: 350px; height: 52px; border: none !important;">
+                            <input class="sec-background text-white" type="Submit" value="GET EARLY ACCESS" style="font-size: 13px; width: 250px; height: 52px; margin-left: -4px; border: none !important;">
                         </form>
                     </div>
                 </div>
@@ -84,18 +115,20 @@
                     <img src="imgs/ellipse5.png" alt="" srcset="" >
                 </div> -->
             </div>
-<br/>
-<br/>
-        
+            <img class="mt-5" src="imgs/ellipseex.png" alt="" srcset="" style="float: right; margin-top: -120px !important;">
+
+    <br/>
+    <br/>
+    
     <div class="py-5 container">
         <div class="row">
             <div class=" col-5 mackup-row">
-                <img class="ml-5 mt-5" src="imgs/screen1.png" alt="" srcset="" style="width: 300px; height: 710px; margin-top: 80px !important; margin-left: 60px !important;">
+                <img class="ml-5 mt-5" src="imgs/screen0.png" alt="" srcset="" style="width: 300px; height: 710px; margin-top: 80px !important; margin-left: 60px !important;">
             </div>
             <div class="col-7">
                 <div class="mr-5">
-                    <div style="margin-left: -130px !important; margin-top: -20px;">
-                        <h3 class="pt-1 justify-content h2 start" >What exactly is Fertilo</h3>
+                    <div style="margin-left: -100px !important; margin-top: -20px;">
+                        <h3 class="pt-1 justify-content h2 start font-weight-bold" >What exactly is Fertilo</h3>
                         <img class="ml-3" src="imgs/line.png" alt="" srcset="">
                     </div>
                 </div>
@@ -108,13 +141,27 @@
                     This propelled me to find out a lasting solution to this problem,which i’m introducing to you today. <br/> <br/>                 
                     Fertilo is a tool that helps you determine the best crop to plant on a farmland for maximum yield and profit.
                     </p>
-                    <button class="btn sec-background text-white" style=" margin-top: 10px; width: 150px; height: 42px;">DEMO PAGES</button>
+                    <button class="btn sec-background text-white" data-toggle="popover" title="Click Demo Pages for popup" style=" margin-top: 10px; width: 150px; height: 42px;">DEMO PAGES</button>
+
+
+                    <!-- popup section  -->
+                <div id="wrap" style="background:transparent;padding:5px; margin-left: -240px;">
+                        <div class="py-3">
+                        <img src="imgs/pages/scan-page.png" width="70" height="120" alt="" name="imgs/pages/scan-page.png" class="popup" title="Click me: Scan-page" longdesc="<p>This is the scan page </p>" />
+                            <img src="imgs/pages/analysis-page.png" width="70" height="120" alt="" name="imgs/pages/analysis-page.png" class="popup" title="Click me: Analysis-page" longdesc="<p>This Analysis page</p>" />
+                            <img src="imgs/pages/recommendation-page.png" width="70" height="120" alt="" name="imgs/pages/recommendation-page.png" class="popup" title=" Click me: Recommendation-page" longdesc="<p>this is the reccommendation page</p>" />
+                            <img src="imgs/pages/forecast-page.png" width="70" height="120" alt="" name="imgs/pages/forecast-page.png" class="popup" title=" Click me: Forecase-page" longdesc="<p>This is Forecase-page</p>" />
+                            <img src="imgs/pages/download-report-page.png" width="70" height="120" alt="" name="imgs/pages/download-report-page.png" class="popup" title="Click me: Download-report-page" longdesc="<p>This is the download report page</p>" />
+                            <img src="imgs/pages/referral-page.png" width="70" height="120" alt="" name="imgs/pages/referral-page.png" class="popup" title="Click me: Referral-page" longdesc="<p>This is Referral page</p>" />
+                    </div>
+                </div>
+
             </div>
          </div>
     </div>
 
     <div class="text-center" >
-        <h3 class="font-weight-bold" style="margin-top: 0px;">How It Works</h3>
+        <h3 class="font-weight-bold h2" style="margin-top: 0px;">How It Works</h3>
         <img class="mr-5 mb-5" src="imgs/line.png" alt="" srcset="" style="margin-left: -45px;">
     </div>
     
@@ -124,7 +171,7 @@
                 <div class="row justify-content-center align-items-center m-3">
                     <div class="col-8" >
                         <div style="margin-top: 140px;">
-                            <img class="" src="imgs/line.png" alt="" srcset="" >
+                            <img class="" src="imgs/line11.png" alt="" srcset="" >
                             <span class="font-weight-bold h4">01</span>
                         </div>
                         <h6 class="h4 font-weight-bold mt-3">Scan the page</h6>
@@ -143,13 +190,13 @@
     <div class=" py-5 container">
         <div class="row ">
             <div class=" col-5 mackup-row3 ml-5">
-                <img class="mr-5 mt-5" src="imgs/screen1.png" alt="" srcset="" style="width: 300px; height: 620px; margin-left: 60px !important;">
+                <img class="mr-5 mt-5" src="imgs/screen2.png" alt="" srcset="" style="width: 300px; height: 620px; margin-left: 60px !important;">
             </div>
             <div class="col-6">
                 <div class="row justify-content-center align-items-center m-3">
                     <div class="col-8" >
                         <div style="margin-top: 140px;">
-                            <img class="" src="imgs/line.png" alt="" srcset="" >
+                            <img class="" src="imgs/line11.png" alt="" srcset="" >
                             <span class="font-weight-bold h4">02</span>
                         </div>
                         <h6 class="h4 font-weight-bold mt-3">Get your analysis</h6>
@@ -169,7 +216,7 @@
                 <div class="row justify-content-center align-items-center m-5">
                     <div class="col-12 ml-5" >
                         <div style="margin-top: 140px;">
-                            <img class="" src="imgs/line.png" alt="" srcset="" >
+                            <img class="" src="imgs/line11.png" alt="" srcset="" >
                             <span class="font-weight-bold h4">03</span>
                         </div>
                         <h6 class="h4 font-weight-bold mt-3">Get Recommendations</h6>
@@ -181,7 +228,7 @@
                 </div>
             </div>
             <div class=" col-5 mackup-row4">
-                <img class="ml-5 mt-5" src="imgs/screen1.png" alt="" srcset="" style="width: 300px; height: 650px; margin-left: 60px !important;">
+                <img class="ml-5 mt-5" src="imgs/screen3.png" alt="" srcset="" style="width: 300px; height: 650px; margin-left: 60px !important;">
             </div>
         </div>
     </div>
@@ -189,13 +236,13 @@
     <div class=" py-5 container">
         <div class="row ">
             <div class=" col-5 ml-5 mackup-row5">
-                <img class="ml-5 mt-5" src="imgs/screen1.png" alt="" srcset="" style="width: 300px; height: 620px; margin-left: 60px !important;">
+                <img class="ml-5 mt-5" src="imgs/screen4.png" alt="" srcset="" style="width: 300px; height: 620px; margin-left: 60px !important;">
             </div>
             <div class="col-6">
                 <div class="row justify-content-center align-items-center m-5">
                     <div class="col-12" >
                         <div style="margin-top: 80px;">
-                            <img class="" src="imgs/line.png" alt="" srcset="" >
+                            <img class="" src="imgs/line11.png" alt="" srcset="" >
                             <span class="font-weight-bold h4">04</span>
                         </div>
                         <h6 class="h4 font-weight-bold mt-3">Get forecast</h6>
@@ -204,54 +251,60 @@
                         of yeild and profit from the selected crop </p>
                     </div>
                 </div>
+                
             </div>
+            
         </div>
-    </div>
+       
 
-<br/>
+    </div>
 
 
 
     <!-- Countdown Timer -->
-<div class=" counter">
-    <div class="container text-white">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <div class="months">
-                    <p class="counter-count font-weight-bold num" id="days">00</p>
-                    <p class="months-p text-white text" id="days-text" >Days</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <div class="days">
-                    <p class="counter-count font-weight-bold num" id="hours">00</p>
-                    <p class="days-p text-white text" id="hours-text">Hours</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <div class="hours">
-                    <p class="counter-count font-weight-bold num" id="mins">00</p>
-                    <p class="hours-p text-white text" id="mins-text">Minutes</p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <div class="minutes">
-                    <p class="counter-count font-weight-bold num" id="secs">00</p>
-                    <p class="minutes-p text-white text" id="secs-text">Seconds</p>
+    <img class="mt-5" src="imgs/ellipse-half2.png" alt="" srcset="" style="float: right; margin-top: -300px !important;">
+    <div class="section">
+        <div class=" counter">
+            <div class="container text-white">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="months">
+                            <p class="counter-count font-weight-bold num" id="days">00</p>
+                            <p class="months-p text-white text" id="days-text" >Days</p>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="days">
+                            <p class="counter-count font-weight-bold num" id="hours">00</p>
+                            <p class="days-p text-white text" id="hours-text">Hours</p>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="hours">
+                            <p class="counter-count font-weight-bold num" id="mins">00</p>
+                            <p class="hours-p text-white text" id="mins-text">Minutes</p>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="minutes">
+                            <p class="counter-count font-weight-bold num" id="secs">00</p>
+                            <p class="minutes-p text-white text" id="secs-text">Seconds</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
 
 <div class=" m-5 py-5 container">
     <div>
-        <div class="text-center py-5 text-bolder" >
-            <h3 style="margin-top: -30px;">What people are saying</h3>
-            <img class="mr-5 mb-5" src="imgs/line.png" alt="" srcset="">
+        <div class="text-center py-3 text-bolder" >
+            <h3 class="h2" style="margin-top: -30px;">What people are saying</h3>
+            <img class="mr-5 mb-5" src="imgs/line.png" alt="" srcset="" style="margin-left: -150px !important;">
         </div>
     </div>
 <div class="row justify-content-center">
@@ -259,53 +312,59 @@
         <div class="card bg-white">
           <div class="card-body text-center ">
             <img src="imgs/client1.png" alt="" srcset="">
-            <p class="py-1 card-text"><span class="sec-color">" </span> I can’t wait to get a tool like this.I have always 
-                found it hard to predict the yeild of my crop. <span class="sec-color">" </span></p>
-                <p class="h3">Cindy S</p>
+            <p class="mt-5 card-text"><span class="sec-color">"   </span> I can’t wait to get a tool like this.I have always 
+                found it hard to predict the yeild of my crop. <span class="sec-color">  " </span></p>
+                <p class="h4 mt-4 font-weight-bold">Cindy S</p>
           </div>
         </div>
         <div class="card bg-white">
           <div class="card-body text-center ">
             <img src="imgs/client2.png" alt="" srcset="">
-            <p class=" py-1 card-text"> <span class="sec-color">" </span>The fact that i will know the best crop to
-                 plant on my farmland is what i can’t wait to have. <span class="sec-color">" </span></p>
-                 <p class="h3">Mark E</p>
+            <p class=" mt-5 card-text"> <span class="sec-color">  " </span>The fact that i will know the best crop to
+                 plant on my farmland is what i can’t wait to have. <span class="sec-color">  " </span></p>
+                 <p class="h4 mt-4 font-weight-bold">Mark E</p>
           </div>
         </div>
         <div class="card bg-white">
           <div class="card-body text-center">
             <img src="imgs/client3.png" alt="" srcset="">
-            <p class="py-1 card-text"> <span class="sec-color">" </span> With this app i believe i will not waste my time planting crops that
-                 will not yield maximum profits. <span class="sec-color">" </span></p>
-            <p class="h3 card-text">Kachino A</p>
+            <p class="mt-5 card-text"> <span class="sec-color">  " </span> With this app i believe i will not waste my time planting crops that
+                 will not yield maximum profits. <span class="sec-color">  " </span></p>
+            <p class="h4 mt-4 font-weight-bold">Kachino A</p>
           </div>
         </div>
         </div>
       </div>
-</div>
-</div>
+    </div>
+   </div>
 </div>
 
 <div class=" pb-5 container text-center">
     <div class="row ">
-        <div class="col-4 justify-content-center align-items-center">
-            <p class="h2">What do you want from Fertilo ?</p>
-            <p class="font-weight-bold">Take our 4 minutes survey and tell us the features you'd love to and what's important to you </p>
-            <button class="btn text-white sec-background" style="border-radius: 4px; width: 300px; height: 60px; text-transform: capitalize;">REQUEST A FEATURE</button>
+        <div class="col-1">
 
         </div>
-        <div class="col-4">
+        <div class="col-4 justify-content-center align-items-center">
+            <p class="h2">What do you want from Fertilo ?</p>
+            <p class="font-weight-bold" style="font-size: 13px;">Take our 4 minutes survey and tell us the features you'd love to and what's important to you </p>
+            <button class="btn mt-2 text-white sec-background" style="border-radius: 4px; width: 300px; height: 55px; text-transform: capitalize;">REQUEST A FEATURE</button>
+
+        </div>
+        <div class="col-2">
             
         </div>
-        <div class="col-4">
+        <div class="col-4 mt-4">
             <p class="font-weight-bold">Register interest and we let you know when Fertilo is baked to crispy perfection</p>
             <form action="/users" method="POST" >
-                <input type="email" value="Email Address" name=email style="width: 400px; height: 70px; border: 1px solid #1DD3B0;">
+                <input class="mt-2" type="email" value="Email Address" name=email style="width: 400px; height: 55px; border: 1px solid #1DD3B0;">
                 <div>
-                    <button class=" mt-4 ml-5 sec-background text-white" type="Submit" style=" border-radius: 4px; width: 300px; height: 60px; text-transform: capitalize;"> GET EARLY ACCESS</button>
+                    <button class=" mt-4 ml-5 sec-background text-white" type="Submit" style="border: none !important; border-radius: 4px; width: 300px; height: 55px; text-transform: capitalize;"> GET EARLY ACCESS</button>
                 </div>
               
             </form>
+        </div>
+        <div class="col-1">
+
         </div>
     </div>
 </div>
@@ -328,9 +387,79 @@
 
       <br/>
 
-      
+      <script language="javascript" type="text/javascript">
+        $(document).ready(function(){
+            $(".popup").popup({
+                transparentLayer : true,
+                gallery : true,
+                galleryTitle : "Gallery1 Title",
+                imgaeDesc : true,
+                galleryCounter : true,
+                imageDesc : true,
+                autoSize : false,
+                boxHeight : 900,
+                boxWidth : 450,
+                shadowLength : 0,
+                transition : 0,
+                galleryCircular: false,
+                onOpen : function() {
+                    console.log("opened the box .popup");
+                },
+                onClose : function() {
+                    console.log("closed the box .popup");
+                }
+            });
+            $(".popup1").popup({
+                transparentLayer : true,
+                gallery : true,
+                galleryTitle : "Gallery2 Title",
+                popupID : "fixedGallery",
+                imageDesc : true,
+                fixedTop : 50,
+                fixedLeft : false,
+                galleryCircular: false,
+                onOpen : function() {
+                    console.log("opened the box .popup1");
+                },
+                onClose : function() {
+                    console.log("closed the box .popup1");
+                }
+            });
+            $(".popup2").popup({
+                transparentLayer : true,
+                gallery : false,
+                popupID : "popupBox2",
+                ajax : true,
+                overflow: "hidden",
+                shadowLength : 10,
+                hasCloseButton : false,
+                onOpen : function() {
+                    console.log("opened the box .popup2");
+                },
+                onClose : function() {
+                    console.log("closed the box .popup2");
+                }
+            });
+            $(".popup3").popup({
+                transparentLayer : true,
+                gallery : false,
+                popupID : "popupBox3",
+                contentClass : "popupBox3",
+                onOpen : function() {
+                    console.log("opened the box .popup3");
+                },
+                onClose : function() {
+                    console.log("closed the box .popup3");
+                }
+            });
 
+        });			
+
+</script>
+ <!-- Javascripts -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script language="javascript" type="text/javascript" src="js/jquery.js"></script>    
+<script language="javascript" type="text/javascript" src="js/popup2.3.js"></script> 
 <script  src="js/app.js"></script>
 </body>
 </html>
