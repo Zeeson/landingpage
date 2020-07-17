@@ -29,17 +29,7 @@
         <!-- Stylesheets -->
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
 	   
-    <script>
-         $(function(){
-$('#myModal').modal({
-   show:true,
-   backdrop:'static'
-});
- //now on button click
-  $('#myModal').modal('show');
-});
-    </script>
-
+   
     <style>
         body{
              background: #E5E5E5;
@@ -129,8 +119,15 @@ $('#myModal').modal({
 
     .fertilo-what{
         margin-top: 30px !important;
-        margin-left: 100px !important;
+        margin-left: -270px !important;
 
+    }
+    .fertilo-head-2{
+        margin-left: 110px !important;
+        font-size: 30px !important;
+    }
+    .fertilo-line-1{
+        margin-left: 110px !important;
     }
     .row-2-cont{
         margin-top: -150px !important;
@@ -152,7 +149,7 @@ $('#myModal').modal({
             background-position: right top, right bottom;
             background-repeat: no-repeat, no-repeat; 
             width: 400px;
-            height: 850px;
+            height: 800px;
         }
         .mackup-row2{
             background-image: url("imgs/ellipse2.png"), url("imgs/ellipse1.png");
@@ -200,10 +197,13 @@ $('#myModal').modal({
     width: 80px !important;
 }
 .border-mobile{
-    width: 650px !important;
+    width: 500px !important;
 }
 .get-access {
     margin-left: -10px !important;
+}
+.card {
+    width: 400px !important; 
 }
 }
 
@@ -229,7 +229,7 @@ $('#myModal').modal({
            
             <div class="mt-1 container border " style="background-color: #011013; width: auto; height: 550px;">
                 <div class="row py-5 m-5 mobile-hero">
-                    <div class="col-6 text-white mobile-hero" style="margin-top: 60px !important; margin-left: 30px;">
+                    <div class="col-lg-6 col-sm-12 text-white mobile-hero" style="margin-top: 60px !important; margin-left: 30px;">
                         <br/>
                         <br/>
                         <h1 class="display-4 sec-color font-weight-bold">FERTILO </h1>
@@ -262,11 +262,11 @@ $('#myModal').modal({
             <div class=" col-lg-5 col-sm-12 mackup-row">
                 <img class="ml-5 mt-5" src="imgs/screen0.png" alt="" srcset="" style="width: 300px; height: 650px; margin-top: 80px !important; margin-left: 60px !important;">
             </div>
-            <div class="col-lg-7 ">
+            <div class="col-lg-7 col-sm-12 ">
                 <div class="mr-5">
                     <div class="fertilo-what" style="margin-left: -100px !important; margin-top: -20px;">
-                        <h3 class="pt-1 justify-content h2 start font-weight-bold " >What exactly is Fertilo</h3>
-                        <img class="ml-3" src="imgs/line.png" alt="" srcset="">
+                        <h3 class="pt-1 justify-content h2 start font-weight-bold fertilo-head-2 " >What exactly is Fertilo</h3>
+                        <img class="ml-3 fertilo-line-1" src="imgs/line.png" alt="" srcset="">
                     </div>
                 </div>
                 
@@ -319,7 +319,7 @@ $('#myModal').modal({
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-default sec-background" data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
@@ -521,9 +521,7 @@ $('#myModal').modal({
             <button class="btn mt-2 text-white sec-background" style="border-radius: 4px; width: 300px; height: 55px; text-transform: capitalize;">REQUEST A FEATURE</button>
 
         </div>
-        <div class="col-lg-2">
-            
-        </div>
+        <div class="col-lg-2"></div>
         <div class="col-lg-4 col-sm-12 mt-4 form-2">
             <p class="font-weight-bold">Register interest and we let you know when Fertilo is baked to crispy perfection</p>
             <form action="/users" method="POST" >
@@ -557,78 +555,6 @@ $('#myModal').modal({
       </div>
 
       <br/>
-
-      <!-- <script language="javascript" type="text/javascript">
-        $(document).ready(function(){
-            $(".popup").popup({
-                transparentLayer : true,
-                gallery : true,
-                galleryTitle : "Gallery1 Title",
-                imgaeDesc : true,
-                galleryCounter : true,
-                imageDesc : true,
-                autoSize : false,
-                boxHeight : 900,
-                boxWidth : 450,
-                shadowLength : 0,
-                transition : 0,
-                galleryCircular: false,
-                onOpen : function() {
-                    console.log("opened the box .popup");
-                },
-                onClose : function() {
-                    console.log("closed the box .popup");
-                }
-            });
-            $(".popup1").popup({
-                transparentLayer : true,
-                gallery : true,
-                galleryTitle : "Gallery2 Title",
-                popupID : "fixedGallery",
-                imageDesc : true,
-                fixedTop : 50,
-                fixedLeft : false,
-                galleryCircular: false,
-                onOpen : function() {
-                    console.log("opened the box .popup1");
-                },
-                onClose : function() {
-                    console.log("closed the box .popup1");
-                }
-            });
-            $(".popup2").popup({
-                transparentLayer : true,
-                gallery : false,
-                popupID : "popupBox2",
-                ajax : true,
-                overflow: "hidden",
-                shadowLength : 10,
-                hasCloseButton : false,
-                onOpen : function() {
-                    console.log("opened the box .popup2");
-                },
-                onClose : function() {
-                    console.log("closed the box .popup2");
-                }
-            });
-            $(".popup3").popup({
-                transparentLayer : true,
-                gallery : false,
-                popupID : "popupBox3",
-                contentClass : "popupBox3",
-                onOpen : function() {
-                    console.log("opened the box .popup3");
-                },
-                onClose : function() {
-                    console.log("closed the box .popup3");
-                }
-            });
-
-        });	
-      
-       
-</script> -->
- <!-- Javascripts -->
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
