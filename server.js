@@ -22,14 +22,14 @@ let userSchema = new mongoose.Schema({
 let User = mongoose.model("User", userSchema); 
 
 app.get('/', (req, res) =>{
-    res.redirect("/users"); 
+    res.render("index"); 
 })
 
 // RESTful Routes
 // Index route
 
 app.get("/users", (req, res) =>{
-  res.render("index")
+  res.render("show")
     User.find()
     .then( function(users) {
         res.render("index", {users: users})

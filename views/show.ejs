@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/bootstrap.css">
+        <link rel="stylesheet" href="/styles/app.css">
+    
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      
+    
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta http-equiv="Content-Style-Type" content="text/css" />  <!-- w3c recomends this meta tag  -->
+            <meta http-equiv="Content-Script-Type" content="text/javascript" />  <!-- w3c recomends this meta tag  -->
+            <meta name="keywords" content="" />
+            <meta name="description" content="" />
+            <meta name="copyright" content="" />
+            <meta name="author" content="" />
+            <meta name="rating" content="general" />
+            <meta name="robots" content="all" />
+            <!-- Stylesheets -->
+            <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+               
+       
+        <style>
+            body{
+                 background: #E5E5E5;
+                 font-family: 'Poppins', sans-serif; 
+              }
+              .top-side-image{
+                  background-image: url("imgs/ellipseex.png");
+                  background-position: right top;
+                  background-repeat: no-repeat;
+                  width: 140px;
+                  height: 100px;
+                  float: right;
+                  rotate: right;
+              }
+            .mackup-row{
+                background-image: url("imgs/ellipse1.png"), url("imgs/ellipse4.png");
+                background-position: left top, right bottom;
+                background-repeat: no-repeat, no-repeat; 
+                width: 400px;
+                height: 800px;
+            }
+            .mackup-row2{
+                background-image: url("imgs/ellipse2.png"), url("imgs/ellipse1.png");
+                background-position: left center, right center;
+                background-repeat: no-repeat, no-repeat; 
+                width: 350px;
+                height: 700px;
+            }
+            .mackup-row3{
+                background-image: url("imgs/ellipse4.png"), url("imgs/ellipse5.png"), url("imgs/ellipse1.png"); 
+                background-position: left top, right center, left bottom; 
+                background-repeat: no-repeat, no-repeat, no-repeat; 
+                width: 350px;
+                height: 700px;
+            }
+            .mackup-row4{
+                background-image: url("imgs/ellipse4.png"), url("imgs/ellipse1.png");
+                background-position: left center, right center;
+                background-repeat: no-repeat, no-repeat; 
+                width: 300px;
+                height: 700px;
+            }
+            .mackup-row5{
+                background-image: url("imgs/ellipse2.png"), url("imgs/ellipse5.png"), url("imgs/ellipse1.png"); 
+                background-position: left top, right center, left bottom; 
+                background-repeat: no-repeat, no-repeat, no-repeat; 
+                width: 300px;
+                height: 700px;
+            }
+            .ellipseex{
+                background-image: url("imgs/ellipseex.png");
+                background-repeat: no-repeat;
+                float: right !important; 
+                margin-top: -120px !important;
+    }
+    @media (max-width: 979px) {
+        body{
+            width: 100%;
+        }
+        .header-cont{
+            align-items: flex-end !important;
+        }
+        .head-logo{
+            margin-left: 0px !important;
+        }
+        .head-btn{
+            margin-right: -50px !important;
+        }
+        .mobile-cont{
+            width: 400px !important;
+        }
+        .mobile-hero{
+            margin-top: -80px !important;
+            align-self: center;
+        }
+        .eml1{
+            width: 300px !important;
+            margin-left: -28px !important;
+            margin-bottom: 10px;
+        }
+        .input-eml1{
+            width: 0px !important;
+        }
+        .hero-p{
+            font-size: 14px !important;
+        }
+    
+        .fertilo-what{
+            margin-top: 30px !important;
+            margin-left: -270px !important;
+    
+        }
+        .fertilo-head-2{
+            margin-left: 110px !important;
+            font-size: 30px !important;
+        }
+        .fertilo-line-1{
+            margin-left: 110px !important;
+        }
+        .row-2-cont{
+            margin-top: -150px !important;
+        }
+        .row-3-cont{
+            margin-top: 240px !important;
+        }
+        .row-3-p{
+            margin-top: -120px !important;
+        }
+        .row-4-p{
+            margin-top: -220px !important;
+        }
+        .row-5-p{
+            margin-top: -100px !important;
+        }
+        .mackup-row{
+                background-image: url("imgs/ellipse1.png"), url("imgs/ellipse4.png");
+                background-position: right top, right bottom;
+                background-repeat: no-repeat, no-repeat; 
+                width: 400px;
+                height: 800px;
+            }
+            .mackup-row2{
+                background-image: url("imgs/ellipse2.png"), url("imgs/ellipse1.png");
+                background-position: left center, right center;
+                background-repeat: no-repeat, no-repeat; 
+                width: 350px;
+                height: 700px;
+            }
+            .mackup-row3{
+                background-image: url("imgs/ellipse4.png"), url("imgs/ellipse5.png"), url("imgs/ellipse1.png"); 
+                background-position: left top, right center, left bottom; 
+                background-repeat: no-repeat, no-repeat, no-repeat; 
+                width: 350px;
+                height: 700px;
+            }
+            .mackup-row4{
+                background-image: url("imgs/ellipse4.png"), url("imgs/ellipse1.png");
+                background-position: left center, right center;
+                background-repeat: no-repeat, no-repeat; 
+                width: 300px;
+                height: 700px;
+                margin-top: -50px !important;
+            }
+            .mackup-row5{
+                background-image: url("imgs/ellipse2.png"), url("imgs/ellipse5.png"), url("imgs/ellipse1.png"); 
+                background-position: left top, right center, left bottom; 
+                background-repeat: no-repeat, no-repeat, no-repeat; 
+                width: 300px;
+                height: 700px;
+                margin-top: 70px !important;
+            }
+            .card{
+                width: 180px !important;
+                height: 300px !important;
+            }
+            .your-want{
+                margin-top: -80px !important;
+                margin-left: 76px !important;
+            }
+            .form-2{
+                margin-top: 80px !important;
+                margin-left: 80px !important;
+            }
+    .footer-mobile{
+        width: 100% !important;
+    }
+    .border-mobile{
+        width: 500px !important;
+    }
+    .get-access {
+        margin-left: -10px !important;
+    }
+    .card {
+        width: 400px !important; 
+    }
+    }
+    
+    @media (max-width: 600px) {
+        
+        .footer-mobile{
+        width: 80px !important;
+    }
+    }
+    
+    
+        </style>
+    
+    </head>
+<body>
+        <div class="py-5 container">
+                <div class="row text-center">
+                        
+                        <div class="jumbotron text-white sec-background justify-content-center align-items-center" style="background-color: #011013;">
+                                <h1 class="display-4 " style="color: #1DD3B0;">Thank You for your Interest</h1>
+                                <p class="lead" style="color: #1DD3B0;">We are glad to have you on board.</p>
+                                <hr class="my-4">
+                                <p style="color: #1DD3B0;">And we promise to serve you to the maximum satiisfaction. </p>
+                                <p class="lead">
+                                        <br/>
+                                  <a class="btn sec-background text-white btn-lg" href="/" role="button">Back to Home</a>
+                                </p>
+                                <img src="imgs/ellipse1.png" alt="" srcset="">
+                                <img src="imgs/ellipse2.png" alt="" srcset="">
+                                <img src="imgs/ellipse4.png" alt="" srcset="">
+                              </div>
+                             
+               
+                </div>
+
+        </div>
+</body>
+</html>
+
+
