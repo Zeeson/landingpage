@@ -46,12 +46,10 @@ app.get("/users", (req, res) =>{
       const entry = {
           email: req.body.email
         }; 
-
     User.create(entry)
     .then( function(entry) {
         res.redirect("/users")
         console.log(entry) 
-        
     })
     .catch( function(err) {
         res.send(err); 

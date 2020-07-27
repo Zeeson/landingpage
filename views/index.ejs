@@ -27,7 +27,8 @@
 	<meta name="rating" content="general" />
 	<meta name="robots" content="all" />
         <!-- Stylesheets -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 	   
    
     <style>
@@ -259,7 +260,7 @@
     <br/>
     <br/>
     
-    <div class="py-5 container">
+    <div class="py-5 container wow">
         <div class="row">
             <div class=" col-lg-5 col-sm-12 mackup-row">
                 <img class="ml-5 mt-5" src="imgs/screen0.png" alt="" srcset="" style="width: 300px; height: 650px; margin-top: 80px !important; margin-left: 60px !important;">
@@ -327,13 +328,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                   
+                    </div>  
             </div>
          </div>
     </div>
 
-    <div class="text-center" >
+    <div class="text-center wow" >
         <h3 class="font-weight-bold h2" style="margin-top: 0px;">How It Works</h3>
         <img class="mr-5 mb-5" src="imgs/line.png" alt="" srcset="" style="margin-left: -45px;">
     </div>
@@ -573,6 +573,8 @@
         $("gridSystemModal").modal("show")
       }), 3000
     })
+
+    new WOW().init();
   </script>
 </body>
 </html>
